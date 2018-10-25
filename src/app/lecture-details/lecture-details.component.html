@@ -1,0 +1,41 @@
+<section class="hero">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        Add Lecture Details
+      </h1>
+      <h2 class="subtitle">
+        Add the lecture details over here.
+      </h2>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="field">
+    <label class="label">Subject</label>
+    <div class="control">
+      <input class="input" type="text" [(ngModel)]="subject" placeholder="Text input">
+    </div>
+    <p class="help">Enter the name of the subject here</p>
+  </div>
+  <div class="field">
+    <label class="label">Class</label>
+    <div class="control">
+      <input class="input" type="text" [(ngModel)]="class" placeholder="Text input">
+    </div>
+    <p class="help">Enter the class here</p>
+  </div>
+  <div class="field">
+    <label class="label">Division</label>
+    <div class="control">
+      <input class="input" type="text" [(ngModel)]="division" placeholder="Text input">
+    </div>
+    <p class="help">Enter the divison here</p>
+  </div>
+  
+  <label class="label">Date</label>
+  <input type="date" [(ngModel)]="date">
+</section>
+<section class="section">
+    <button class="button is-primary" (click)="addDetails()">Submit</button>
+</section>

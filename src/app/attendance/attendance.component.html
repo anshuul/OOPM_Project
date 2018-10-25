@@ -1,0 +1,37 @@
+<section class="hero">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        Add Students
+      </h1>
+      <h2 class="subtitle">
+        Add the Roll numbers of the students here.
+      </h2>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="field">
+    <label class="label">Roll Number</label>
+    <div class="control">
+      <input class="input" type="number" [(ngModel)]="rollnumber" placeholder="Number input">
+    </div>
+    <p class="help">Enter the Roll Number here</p>
+  </div>
+  <div class="control">
+    <button class="button is-primary" (click)="addNumber()">Submit</button>
+  </div>
+</section>
+<section class="section">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        List of Students Present
+      </h1>
+    </div>
+  </div>
+  <h4 *ngFor="let roll of rollnumbers">{{roll}}</h4>
+</section>
+<section class="section">
+  <button class="button is-primary" (click)="addToDatabase()">Add To Database</button>
+</section>

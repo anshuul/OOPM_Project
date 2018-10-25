@@ -1,0 +1,10 @@
+.welcome {
+    background-image: url('../../assets/homeimage.webp');
+    background-position: center,center; 
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.background-tint {
+  background-color: rgba(0, 0, 0, 0.336); // Tint color
+  background-blend-mode: multiply;
+}
